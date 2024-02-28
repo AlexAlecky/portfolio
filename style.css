@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-bar {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #f5f5f5;
+  padding: 0.5px 0;
+  position: sticky;
+  top: 0;
+}
+
+.nav-bar-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.name {
+  font-size: 40px;
+  transition: all ease-in-out 500ms;
+  margin-bottom: 1rem;
+}
+
+.name span {
+  color: blue;
+}
+
+.name:hover {
+  text-decoration: underline aqua;
+  cursor: pointer;
+}
+
+.link-list {
+  display: flex;
+  list-style: none;
+}
+
+.link-list li a {
+  background-color: aliceblue;
+  font-size: 18px;
+  color: black;
+}
+
+.link-list li a:hover {
+  box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+}
+
+.title {
+  margin-top: 8rem;
+  text-align: center;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: all ease-in-out 300ms;
+}
+
+#home {
+  background-color: black;
+  color: white;
+  padding: 18px 18px;
+  text-align: center;
+}
+
+.intro-content {
+  border: solid 1px white;
+  width: 350px;
+  height: 250px;
+  margin-top: 35px;
+  margin-left: 40%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.intro {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.hire-button {
+  margin-top: 50px;
+  border-radius: 10px;
+  border-color: #ffffff;
+  padding: 0.6em 2.3em;
+  cursor: pointer;
+  font-size: 1em;
+  color: black;
+  background-image: linear-gradient(45deg, transparent 50%, #000000 50%);
+  background-position: 25%;
+  background-size: 400%;
+  -webkit-transition: background 500ms ease-in-out, color 500ms ease-in-out;
+  transition: background 500ms ease-in-out, color 500ms ease-in-out;
+}
+
+.hire-button:hover {
+  color: white;
+  background-position: 100%;
+}
+
+.about {
+  margin: 3rem 2rem;
+}
+
+.web-developer {
+  border-radius: 7px;
+  width: 350px;
+}
+
+.about-content {
+  display: flex;
+}
+
+.info {
+  margin: 0 35px;
+}
+
+.info h1 {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.info p {
+  margin-top: 12px;
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.my-skills {
+  margin: 5rem 0;
+  background-color: black;
+  padding: 2rem 5rem;
+}
+
+.skill-heading,
+.projects-heading {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: center;
+}
+
+.skill-heading {
+  color: aliceblue;
+}
+
+.skill-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.html,
+.css,
+.javascript {
+  margin-top: 25px;
+  width: 250px;
+  height: 330px;
+  color: white;
+  border-radius: 7px;
+  padding: 9px 20px;
+  transition: all ease-in-out 600ms;
+}
+
+.html:hover,
+.css:hover,
+.javascript:hover {
+  background-color: red;
+
+}
+
+.html-heading,
+.css-heading,
+.javascript-heading {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline cadetblue;
+}
+
+.html-info,
+.css-info,
+.javascript-info {
+  font-size: 25px;
+  margin-top: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.my-projects {
+  margin-top: 5rem;
+  padding: 2rem 5rem;
+}
+
+.project-content {
+  display: flex;
+
+}
+
+.project {
+  margin: 15px 15px;
+  border: 2px solid black;
+  width: 350px;
+  height: 280px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+
+.project p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+}
+
+.link {
+  margin-top: 25px;
+}
+
+.project-link {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  margin-left: 35px;
+  color: whitesmoke;
+  background-color: black;
+  padding: 10px 10px;
+  border-radius: 7px;
+  transition: all ease-in-out 300ms;
+}
+
+a:hover {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+a:active {
+  opacity: 0.5;
+}
+
+.contact {
+  padding: 2rem 0;
+  background-color: #000000;
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+form h3 {
+  color: black;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 4px;
+  border-radius: 10px;
+  outline: none;
+  background-color: aliceblue;
+  font-size: 16px;
+}
+
+form button {
+  padding: 15px;
+  background: #ff5361;
+  color: aliceblue;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+}
+
+.contact-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.contact-left-title h2 {
+  font-weight: 600;
+  color: darkgreen;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: #a363aa;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-input {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: gray;
+}
+
+.contact-left textarea {
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+.contact-input:focus {
+  border: 2px salmon solid;
+}
+
+.contact-input::placeholder {
+  color: lightgray;
+}
+
+.contact-left button {
+  position: relative;
+  padding: 1rem 2rem 0.5rem 2.5rem;
+  color: #000000;
+  border: 3px solid #776e62;
+  -webkit-transition: padding 0.3s ease-in-out;
+  transition: padding 0.3s ease-in-out;
+}
+
+.contact-left button:before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  border-right: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-left button:hover {
+  padding: 0.75rem 2.25rem;
+}
+
+.contact-left button:before {
+  top: 0;
+  left: 0;
+}
